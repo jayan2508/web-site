@@ -1,0 +1,37 @@
+<h2>{{ title() }}</h2>
+
+<form (ngSubmit)="isEditing ? updateItem() : addItem()">
+  <input type="text" placeholder="Name" [(ngModel)]="formModel.name" name="name" required />
+  <input type="email" placeholder="Email" [(ngModel)]="formModel.email" name="email" required />
+  <button type="submit">{{ isEditing ? 'Update' : 'Add' }}</button>
+  @if(isEditing){
+
+    <button type="button" (click)="clearForm()">Cancel</button>
+  }
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of items; track item; let i = $index) {
+      <tr>
+        <td>{{ item.num }}</td>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td>
+          <button (click)="editItem(i)">Edit</button>
+          <button (click)="deleteItem(i)">Delete</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
