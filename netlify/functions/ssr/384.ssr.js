@@ -1,1 +1,10 @@
-"use strict";exports.id=384,exports.ids=[384],exports.modules={384:(e,t,n)=>{n.d(t,{default:()=>i});const i='<!doctype html>\n<html lang="en" data-beasties-container="">\n<head>\n  <meta charset="utf-8">\n  <title>R S</title>\n  <base href="/">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <link rel="icon" type="image/x-icon" href="favicon.ico">\n<link rel="stylesheet" href="styles-5INURTSO.css"></head>\n<body ngcm="">\n  <app-root></app-root>\n<script src="main-2FJG3KQH.js" type="module"><\/script></body>\n</html>\n'}};
+'use strict';
+(exports.id = 384),
+  (exports.ids = [384]),
+  (exports.modules = {
+    384: (e, t, n) => {
+      n.d(t, { default: () => i });
+      const i =
+        '<!doctype html>\n<html lang="en" data-beasties-container="">\n<head>\n  <meta charset="utf-8">\n  <title>R S</title>\n  <base href="/">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <link rel="icon" type="image/x-icon" href="favicon.ico">\n<link rel="stylesheet" href="styles-5INURTSO.css"></head>\n<body ngcm="">\n  <app-root></app-root>\n<script src="main-2FJG3KQH.js" type="module"></script></body>\n</html>\n';
+    },
+  });

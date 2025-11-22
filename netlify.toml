@@ -1,5 +1,5 @@
 [build]
-command = "npm run build:ssr && npm run compile:function"
+command = "npm run build && npm run compile:function"
 publish = "dist/website/browser"
 functions = "netlify/functions"
 
