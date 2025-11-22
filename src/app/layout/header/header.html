@@ -1,0 +1,16 @@
+<header class="header-content">
+  <div class="logo">
+    <a routerLink="/home">
+      <img src="/images/RS-logo-4.svg" alt="Logo" />
+    </a>
+  </div>
+
+  <nav class="navbar-section">
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/home/about" routerLinkActive="active">About</a>
+    <a routerLink="/home/services" routerLinkActive="active">Services</a>
+    <a routerLink="/home/contact" routerLinkActive="active">Contact</a>
+  </nav>
+</header>
